@@ -1,14 +1,11 @@
 # http://en.wikipedia.org/wiki/Zebra_Puzzle
 import itertools
 
-
 def on_right(h1, h2):
     return h1 - h2 == 1
 
-
 def next_to(h1, h2):
     return abs(h1 - h2) == 1
-
 
 def zebra_puzzle():
   houses = first, _, middle, _, _ = [1, 2, 3, 4, 5]
@@ -47,14 +44,10 @@ def zebra_puzzle():
     if next_to(Kools, horse)
     )
 
-
 def c(sequence):
   return sequence
 
-
 print zebra_puzzle()
-
-
 
 def ints(start, end = None):
   i = start
@@ -62,11 +55,9 @@ def ints(start, end = None):
     yield i
     i = i + 1
 
-
 def all_ints():
   "Generate integers in the order 0, +1, -1, +2, -2, +3, -3, ..."
   yield 0
   for i in ints(1):
     yield i
     yield -i
-
